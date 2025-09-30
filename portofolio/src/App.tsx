@@ -1,4 +1,4 @@
-import { Image } from "./data/data"
+import { Image, listTools, } from "./data/data"
 import { IoMdDownload, IoMdEye } from "react-icons/io";
 
 function App() {
@@ -57,6 +57,26 @@ function App() {
         </div>
       </div>
       {/* About Session */}
+
+      {/* Show up Tools */}
+      <div className="Tools mt-32">
+        <h1 className="text-4xl font-bold mb-4 text-center underline">Tools</h1>
+        <p className="opacity-60 text-center">Berikut adalah tools yang biasa saya gunakan saat coding</p>
+        <div className="Tool_box mt-10 grid grid-cols-4 gap-2">
+          {
+            listTools.map((tools) => {
+              return <div key={tools.id} className=" flex items-center gap-2 p-2 group border border-zinc-600 rounded-md hover:bg-zinc-800">
+                <img src={tools.gambar} alt={tools.nama} className="w-12 bg-zinc-800 p-1 group-hover:bg-zinc-900" />
+                <div>
+                  <h3 className="font-bold">{tools.nama}</h3>
+                  <p className="opacity-50">{tools.ket}</p>
+                </div>
+              </div>
+            })
+          }
+        </div>
+      </div>
+      {/* Show up Tools */}
     </>
   )
 }
