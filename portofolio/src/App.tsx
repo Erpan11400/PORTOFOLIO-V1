@@ -109,6 +109,32 @@ function App() {
         </div>
       </div>
       {/* Project */}
+
+      {/* Contact */}
+      <div className="Contact mt-32 p-10">
+        <h1 className="text-center text-4xl font-bold underline">Contact</h1>
+        <p className="my-5 text-center opacity-60">You can contact me</p>
+        <form action="https://formsubmit.co/ervan.gkbi@gmail.com" method="POST" className="bg-zinc-800 p-10 w-fit mx-auto rounded-md" autoComplete="off">
+          <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-2">
+              <label>Nama Lengkap</label>
+              <input type="text" name="name" placeholder="Enter your name" required className="p-2 border border-zinc-500 rounded-sm" />
+            </div>
+            <div className="flex flex-col gap-2">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="Enter your email" required className="p-2 border border-zinc-500 rounded-sm" />
+            </div>
+            <div className="flex flex-col gap-2">
+              <label htmlFor="Pesan">Pesan</label>
+              <textarea name="pesan" id="pesan" cols={30} rows={7} placeholder="Your message here" className="p-2 border border-zinc-500 rounded-sm"></textarea>
+            </div>
+            <div className="text-center">
+              <button type="submit" className="p-3 rounded-lg w-full bg-violet-700 hover:bg-violet-500">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      {/* Contact */}
     </>
   )
 }
