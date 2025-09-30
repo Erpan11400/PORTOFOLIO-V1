@@ -20,8 +20,8 @@ function App() {
           <br />
           <h3 className="text-2xl">Undergraduate Student at Binus University</h3>
           <br />
-          <p className="text-base text-justify mb-2 opacity-60">Saya adalah mahasiswa Sarjana ( S1 ) dengan jurusan <span className="italic text-yellow-300">Computer Science</span>. Saya mulai menyukai programming sejak duduk dibangku SMA terlebih lagi dengan web dan juga backend, maka saya memutuskan untuk mendalami hal tersebut.</p>
-          <p className="text-base text-justify mb-6 opacity-60">Diluar bidang programming, saya juga sempai mengikuti beberapa organisasi. Saya juga memiliki ketertarikan dengan team work, saya suka bertukar ide - ide. Saya memiliki rasa tanggung jawab dalam menjalani kegiatan, maka saya akan bersungguh - sungguh menjalani tanggung jawab hingga akhir.</p>
+          <p className="text-base text-justify mb-2 mx-6 lg:mx-0 opacity-60">Saya adalah mahasiswa Sarjana ( S1 ) dengan jurusan <span className="italic text-yellow-300">Computer Science</span>. Saya mulai menyukai programming sejak duduk dibangku SMA terlebih lagi dengan web dan juga backend, maka saya memutuskan untuk mendalami hal tersebut.</p>
+          <p className="text-base text-justify mb-6 mx-6 lg:mx-0 opacity-60">Diluar bidang programming, saya juga sempai mengikuti beberapa organisasi. Saya juga memiliki ketertarikan dengan team work, saya suka bertukar ide - ide. Saya memiliki rasa tanggung jawab dalam menjalani kegiatan, maka saya akan bersungguh - sungguh menjalani tanggung jawab hingga akhir.</p>
           <div className="flex items-center justify-center lg:justify-start sm:gap-4 gap-2">
             <a href="#" className="flex items-center gap-1 bg-violet-700 p-4 rounded-2xl hover:bg-violet-500">Download CV <IoMdDownload size={25} /></a>
             <a href="#" className="flex items-center gap-1 bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-500">View Project <IoMdEye size={25} /> </a>
@@ -62,7 +62,7 @@ function App() {
       <div className="Tools mt-32">
         <h1 className="text-4xl font-bold mb-4 text-center underline">Tools</h1>
         <p className="opacity-60 text-center">Berikut adalah tools yang biasa saya gunakan saat coding</p>
-        <div className="Tool_box mt-10 grid grid-cols-4 gap-2">
+        <div className="Tool_box mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
           {
             listTools.map((tools) => {
               return <div key={tools.id} className=" flex items-center gap-2 p-2 group border border-zinc-600 rounded-md hover:bg-zinc-800">
@@ -106,15 +106,15 @@ function App() {
               </div>
             })
           }
-        </div>
+        </div> 
       </div>
       {/* Project */}
 
       {/* Contact */}
-      <div className="Contact mt-32 p-10">
+      <div className="Contact mt-32 sm:p-10 p-0">
         <h1 className="text-center text-4xl font-bold underline">Contact</h1>
         <p className="my-5 text-center opacity-60">You can contact me</p>
-        <form action="https://formsubmit.co/ervan.gkbi@gmail.com" method="POST" className="bg-zinc-800 p-10 w-fit mx-auto rounded-md" autoComplete="off">
+        <form action="https://formsubmit.co/ervan.gkbi@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-2">
               <label>Nama Lengkap</label>
@@ -129,7 +129,7 @@ function App() {
               <textarea name="pesan" id="pesan" cols={30} rows={7} placeholder="Your message here" className="p-2 border border-zinc-500 rounded-sm"></textarea>
             </div>
             <div className="text-center">
-              <button type="submit" className="p-3 rounded-lg w-full bg-violet-700 hover:bg-violet-500">Submit</button>
+              <button type="submit" className="p-3 rounded-lg w-full bg-violet-700 cursor-pointer hover:bg-violet-500">Submit</button>
             </div>
           </div>
         </form>
