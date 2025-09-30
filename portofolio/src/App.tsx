@@ -1,4 +1,4 @@
-import { Image, listTools, } from "./data/data"
+import { Image, listTools, listProyek } from "./data/data"
 import { IoMdDownload, IoMdEye } from "react-icons/io";
 
 function App() {
@@ -77,6 +77,38 @@ function App() {
         </div>
       </div>
       {/* Show up Tools */}
+
+      {/* Project */}
+      <div className="Project mt-32 py-10">
+        <h1 className="text-4xl text-center mb-4 font-bold underline">Project</h1>
+        <p className="text-center opacity-60">Berikut ini adalah beberapa project yang pernah saya kerjakan</p>
+        <div className="Project_box mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {
+            listProyek.map((project) => {
+              return <div key={project.id} className="p-4 bg-zinc-600 rounded-md">
+                <img src={project.gambar} alt={project.nama} />
+                <div>
+                  <p className="my-4 text-2xl font-bold">{project.nama}</p>
+                  <p className="mb-4">{project.desk}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {
+                      project.tools.map((tool, index) => {
+                        return <div className="py-1 px-3 bg-zinc-500 rounded-md font-semibold">
+                          <p key={index}>{tool}</p>
+                        </div>
+                      })
+                    }
+                  </div>
+                  <div className="mt-5 p-4 bg-violet-700 rounded-md text-center hover:bg-violet-500">
+                    <a href="#">Lihat Website</a>
+                  </div>
+                </div>
+              </div>
+            })
+          }
+        </div>
+      </div>
+      {/* Project */}
     </>
   )
 }
