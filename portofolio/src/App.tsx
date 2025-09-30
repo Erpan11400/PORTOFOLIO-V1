@@ -32,6 +32,31 @@ function App() {
         </div>
       </div>
       {/* Home Session or Hero Session */}
+
+      {/* About Session */}
+      <h1 className="mt-32 mb-10 text-4xl text-center font-bold underline">About Me</h1>
+      <div className="About bg-zinc-800 w-full sm:w-3/4 lg:w-4/5 mx-auto p-7 rounded-lg">
+        <img src={Image.HeroImage} alt="Ervan Setyatama" className="w-15 mb-4 rounded-md sm:hidden" />
+        <p className="opacity-60 mb-10 text-base/loose">Diluar bidang programming, saya juga sempai mengikuti beberapa organisasi. Saya juga memiliki ketertarikan dengan team work, saya suka bertukar ide - ide. Saya memiliki rasa tanggung jawab dalam menjalani kegiatan, maka saya akan bersungguh - sungguh menjalani tanggung jawab hingga akhir.</p>
+        <div className="flex items-center justify-between">
+          <img src={Image.HeroImage} alt="Ervan Setyatama" className="w-15 rounded-md sm:block hidden" />
+          <div className="flex items-center gap-6">
+            <div>
+              <h1 className="text-4xl mb-1">
+                5<span className="text-violet-500">+</span>
+              </h1>
+              <p>Proyek Selesai</p>
+            </div>
+            <div>
+              <h1 className="text-4xl mb-1">
+                2
+              </h1>
+              <p>Pengalaman</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* About Session */}
     </>
   )
 }
