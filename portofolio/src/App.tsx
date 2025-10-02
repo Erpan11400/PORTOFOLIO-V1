@@ -6,10 +6,10 @@ function App() {
     <>
       {/* Home Session or Hero Session */}
       <div id="Hero" className="Hero grid grid-cols-1 lg:grid-cols-2 xl:gap-0 gap-4 items-center scroll-mt-24 mt-3">
-        <div className="flex justify-center my-5 lg:hidden">
+        <div className="flex justify-center my-5 lg:hidden animate__animated animate__fadeInUp animate__delay-1s">
           <img src={Image.HeroImage} alt="Ervan Setyatama" className="w-[500px] rounded-b-full" />
         </div>
-        <div className="text-center lg:text-left">
+        <div className="text-center lg:text-left animate__animated animate__fadeInUp animate__delay-1s">
           <div className="flex justify-center lg:justify-start">
             <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
               <img src={Image.HeroImage} alt="Ervan Setyatama" className="w-10 rounded-md lg:block hidden" />
@@ -27,7 +27,7 @@ function App() {
             <a href="#" className="flex items-center gap-1 bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-500">View Project <IoMdEye size={25} /> </a>
           </div>
         </div>
-        <div className="my-5 lg:block hidden">
+        <div className="my-5 lg:block hidden animate__animated animate__fadeInUp animate__delay-2s">
           <img src={Image.HeroImage} alt="Ervan Setyatama" className="w-[500px] lg:ml-auto rounded-b-full" />
         </div>
       </div>
@@ -35,7 +35,7 @@ function App() {
 
       {/* About Session */}
       <h1 id="About" className="mt-32 mb-10 text-4xl text-center font-bold underline scroll-mt-24">About Me</h1>
-      <div className="About bg-zinc-800 w-full sm:w-3/4 lg:w-4/5 mx-auto p-7 rounded-lg">
+      <div className="About bg-zinc-800 w-full sm:w-3/4 lg:w-4/5 mx-auto p-7 rounded-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
         <img src={Image.HeroImage} alt="Ervan Setyatama" className="w-15 mb-4 rounded-md sm:hidden" />
         <p className="opacity-60 mb-10 text-base/loose">Diluar bidang programming, saya juga sempai mengikuti beberapa organisasi. Saya juga memiliki ketertarikan dengan team work, saya suka bertukar ide - ide. Saya memiliki rasa tanggung jawab dalam menjalani kegiatan, maka saya akan bersungguh - sungguh menjalani tanggung jawab hingga akhir.</p>
         <div className="flex items-center justify-between">
@@ -61,11 +61,11 @@ function App() {
       {/* Show up Tools */}
       <div className="Tools mt-32">
         <h1 className="text-4xl font-bold mb-4 text-center underline">Tools</h1>
-        <p className="opacity-60 text-center">Berikut adalah tools yang biasa saya gunakan saat coding</p>
+        <p className="opacity-60 text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Berikut adalah tools yang biasa saya gunakan saat coding</p>
         <div className="Tool_box mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
           {
             listTools.map((tools) => {
-              return <div key={tools.id} className=" flex items-center gap-2 p-2 group border border-zinc-600 rounded-md hover:bg-zinc-800">
+              return <div key={tools.id} className=" flex items-center gap-2 p-2 group border border-zinc-600 rounded-md hover:bg-zinc-800" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay={tools.dad}>
                 <img src={tools.gambar} alt={tools.nama} className="w-12 bg-zinc-800 p-1 group-hover:bg-zinc-900" />
                 <div>
                   <h3 className="font-bold">{tools.nama}</h3>
@@ -80,12 +80,12 @@ function App() {
 
       {/* Project */}
       <div className="Project mt-32 py-10">
-        <h1 className="text-4xl text-center mb-4 font-bold underline">Project</h1>
-        <p className="text-center opacity-60">Berikut ini adalah beberapa project yang pernah saya kerjakan</p>
+        <h1 id="Project" className="text-4xl text-center mb-4 font-bold underline scroll-mt-24">Project</h1>
+        <p className="text-center opacity-60" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Berikut ini adalah beberapa project yang pernah saya kerjakan</p>
         <div className="Project_box mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {
             listProyek.map((project) => {
-              return <div key={project.id} className="p-4 bg-zinc-600 rounded-md">
+              return <div key={project.id} className="p-4 bg-zinc-600 rounded-md" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay={project.dad}>
                 <img src={project.gambar} alt={project.nama} />
                 <div>
                   <p className="my-4 text-2xl font-bold">{project.nama}</p>
@@ -112,9 +112,9 @@ function App() {
 
       {/* Contact */}
       <div className="Contact mt-32 sm:p-10 p-0">
-        <h1 className="text-center text-4xl font-bold underline">Contact</h1>
-        <p className="my-5 text-center opacity-60">You can contact me</p>
-        <form action="https://formsubmit.co/ervan.gkbi@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off">
+        <h1 id="Contact" className="text-center text-4xl font-bold underline scroll-mt-24">Contact</h1>
+        <p className="my-5 text-center opacity-60" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">You can contact me</p>
+        <form action="https://formsubmit.co/ervan.gkbi@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="300">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-2">
               <label>Nama Lengkap</label>
