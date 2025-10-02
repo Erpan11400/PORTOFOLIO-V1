@@ -34,7 +34,7 @@ const Navbar = () => {
                     ? "bg-white/70 backdrop-blur-md shadow-md rounded-b-xl text-black"
                     : "bg-transparent"
                 }`}>
-                <div className="container p-2 flex justify-between my-4 items-center">
+                <div className="container p-2 flex justify-between py-4 items-center">
                     <div>
                         <h1 className='text-3xl font-bold'>PORTOFOLIO</h1>
                     </div>

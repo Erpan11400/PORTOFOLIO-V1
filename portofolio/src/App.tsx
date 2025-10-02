@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       {/* Home Session or Hero Session */}
-      <div id="#Hero" className="Hero grid grid-cols-1 lg:grid-cols-2 xl:gap-0 gap-4 items-center">
+      <div id="Hero" className="Hero grid grid-cols-1 lg:grid-cols-2 xl:gap-0 gap-4 items-center scroll-mt-24 mt-3">
         <div className="flex justify-center my-5 lg:hidden">
           <img src={Image.HeroImage} alt="Ervan Setyatama" className="w-[500px] rounded-b-full" />
         </div>
@@ -34,7 +34,7 @@ function App() {
       {/* Home Session or Hero Session */}
 
       {/* About Session */}
-      <h1 className="mt-32 mb-10 text-4xl text-center font-bold underline">About Me</h1>
+      <h1 id="About" className="mt-32 mb-10 text-4xl text-center font-bold underline scroll-mt-24">About Me</h1>
       <div className="About bg-zinc-800 w-full sm:w-3/4 lg:w-4/5 mx-auto p-7 rounded-lg">
         <img src={Image.HeroImage} alt="Ervan Setyatama" className="w-15 mb-4 rounded-md sm:hidden" />
         <p className="opacity-60 mb-10 text-base/loose">Diluar bidang programming, saya juga sempai mengikuti beberapa organisasi. Saya juga memiliki ketertarikan dengan team work, saya suka bertukar ide - ide. Saya memiliki rasa tanggung jawab dalam menjalani kegiatan, maka saya akan bersungguh - sungguh menjalani tanggung jawab hingga akhir.</p>
