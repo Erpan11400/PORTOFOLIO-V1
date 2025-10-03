@@ -1,4 +1,4 @@
-import { RiGithubFill, RiInstagramFill, RiWhatsappFill } from "react-icons/ri";
+import { FaInstagram, FaGithub, FaLinkedin, FaLine } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -10,14 +10,17 @@ const Footer = () => {
             <a href="# ">Project</a>
         </div>
         <div className="flex items-center gap-2">
-            <a href="#">
-                <RiGithubFill size={30} />
+            <a href="https://github.com/Erpan11400">
+                <FaGithub size={30} />
             </a>
-            <a href="#">
-                <RiInstagramFill size={30}/>
+            <a href="www.linkedin.com/in/ervan-setyatama">
+                <FaLinkedin size={30}/>
             </a>
-            <a href="#">
-                <RiWhatsappFill size={30}/>
+            <a href="https://www.instagram.com/ervan_stytma/">
+                <FaInstagram size={30}/>
+            </a>
+            <a href="https://line.me/ti/p/QOdcAl_DUm">
+                <FaLine size={30}/>
             </a>
         </div>
     </div>

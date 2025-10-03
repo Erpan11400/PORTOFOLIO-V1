@@ -18,8 +18,6 @@ import Tools10 from "/assets/tools/nodejs.png";
 import Tools11 from "/assets/tools/github.png";
 import Tools12 from "/assets/tools/canva.png";
 import Tools13 from "/assets/tools/figma.png";
-// import Tools from "/assets/tools/ai.png";
-// import Tools from "/assets/tools/nextjs.png";
 
 export const listTools = [
   {
@@ -115,61 +113,47 @@ export const listTools = [
   },
 ];
 
-import Proyek1 from "/assets/proyek/proyek1.webp";
-import Proyek2 from "/assets/proyek/proyek2.webp";
-import Proyek3 from "/assets/proyek/proyek3.webp";
-import Proyek4 from "/assets/proyek/proyek4.webp";
-import Proyek5 from "/assets/proyek/proyek5.webp";
-import Proyek6 from "/assets/proyek/proyek6.webp";
+import Proyek1 from "/assets/proyek/proyekTiketIn.webp";
+import Proyek2 from "/assets/proyek/proyekLibraryManagementSystem.webp";
+import Proyek3 from "/assets/proyek/e-book.webp";
+import Proyek4 from "/assets/proyek/portofolio.webp";
 
 export const listProyek = [
   {
     id: 1,
     gambar: Proyek1,
-    nama: "Website Sekolah",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS"],
+    nama: "TiketIn",
+    desk: "Penerapan konsep 'Struct' dalam menangani pembelian tiket event",
+    tools: ["C"],
+    link: "https://github.com/Erpan11400/C/tree/main/AOL%20Semester%201",
     dad: "100",
   },
   {
     id: 2,
     gambar: Proyek2,
-    nama: "Company Profile",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS", "Swiper", "Lightbox Gallery"],
+    nama: "Library Management System",
+    desk: "Penerapan konsep AVL dalam menangani sistem perpustakaan",
+    tools: ["C"],
+    link: "https://github.com/Erpan11400/C/tree/main/AOL%20Semester%202",
     dad: "200",
   },
   {
     id: 3,
     gambar: Proyek3,
-    nama: "Web Pernikahan 2.0",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["Vite", "ReactJS", "TailwindCSS", "AOS"],
+    nama: "E-Book Management",
+    desk: "Design web untuk menunjang sistem perpustakaan",
+    tools: ["HTML", "CSS", "JS", "Node.js"],
+    link: "https://ebook-app-nodejs.onrender.com/index",
     dad: "300",
   },
   {
     id: 4,
     gambar: Proyek4,
-    nama: "Website Course",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["Vite", "ReactJS", "Bootstrap", "AOS"],
+    nama: "Portofolio Website",
+    desk: "Sebuah website portofolio",
+    tools: ["Vite", "ReactJS", "TailwindCSS", "AOS", "TypeScript"],
+    link: "#",
     dad: "400",
-  },
-  {
-    id: 5,
-    gambar: Proyek5,
-    nama: "Web Portfolio",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "Bootsrap"],
-    dad: "500",
-  },
-  {
-    id: 6,
-    gambar: Proyek6,
-    nama: "Company Profile 2.0",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["NextJS", "TailwindCSS", "Framermotion"],
-    dad: "600",
   },
 ];
 
