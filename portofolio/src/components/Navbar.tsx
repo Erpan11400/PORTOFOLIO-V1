@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
 import { navbarMenu } from '../data/data'
-import { MdMenu } from "react-icons/md";
-import ResponsiveNavbar from './ResponsiveNavbar';
+import { MdMenu } from "react-icons/md"
+import ResponsiveNavbar from './ResponsiveNavbar'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)

@@ -1,5 +1,5 @@
 import { Image, listTools, listProyek } from "./data/data"
-import { IoMdDownload, IoMdEye } from "react-icons/io";
+import { IoMdDownload, IoMdEye } from "react-icons/io"
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <br />
           <h3 className="text-xl">Undergraduate Computer Science | Software Engineering</h3>
           <div className="mt-10 flex items-center justify-center lg:justify-start sm:gap-4 gap-2">
-            <a href="#" className="flex items-center gap-1 bg-violet-700 p-4 rounded-2xl hover:bg-violet-500">Download CV <IoMdDownload size={25} /></a>
+            <a href="/CV.pdf" className="flex items-center gap-1 bg-violet-700 p-4 rounded-2xl hover:bg-violet-500" download="CV Ervan Setyatama">Download CV <IoMdDownload size={25} /></a>
             <a href="#Project" className="flex items-center gap-1 bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-500">View Project <IoMdEye size={25} /> </a>
           </div>
         </div>
@@ -109,7 +109,7 @@ function App() {
       <div className="Contact mt-32 sm:p-10 p-0">
         <h1 id="Contact" className="text-center text-4xl font-bold underline scroll-mt-24">Contact</h1>
         <p className="my-5 text-center opacity-60" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">You can contact me</p>
-        <form action="https://formsubmit.co/ervan.gkbi@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="300">
+        <form action="https://formsubmit.co/ervan.gkbi@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-2/3 w-full mx-auto rounded-md" autoComplete="off" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="300">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-2">
               <label>Nama Lengkap</label>
