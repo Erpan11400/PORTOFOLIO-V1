@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { navbarMenu } from '../data/data'
-import { MdMenu } from "react-icons/md"
+import { MdMenu } from 'react-icons/md'
 import ResponsiveNavbar from './ResponsiveNavbar'
 
 const Navbar = () => {
@@ -54,7 +54,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-            <ResponsiveNavbar open={open} />
+            <ResponsiveNavbar open={open} setOpen={setOpen}/>
         </>
     )
 }

@@ -1,5 +1,26 @@
 @import "tailwindcss";
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes scroll-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animation-scroll-x {
+  animation: scroll-x 5s infinite linear;
+}
+
+.Group:hover .animation-scroll-x {
+  animation-play-state: paused;
+}
+
 @layer base {
   body {
     font-family: "Poppins", sans-serif;
