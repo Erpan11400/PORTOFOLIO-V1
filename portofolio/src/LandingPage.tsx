@@ -13,7 +13,7 @@ export const LandingPage = () => {
                     <div className="flex justify-center lg:justify-start">
                         <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
                             <img src={Image.HeroImage} alt="Ervan Setyatama" className="w-10 rounded-md lg:block hidden" />
-                            <p>" You can casue you're familiar !! "</p>
+                            <p>" You can, cause you're familiar with that !! "</p>
                         </div>
                     </div>
                     <h1 className="text-5xl/tight">Hi 🙌🏻 I'm Ervan Setyatama</h1>
@@ -34,8 +34,8 @@ export const LandingPage = () => {
             <h1 id="About" className="mt-32 mb-10 text-4xl text-center font-bold underline scroll-mt-24">About Me</h1>
             <div className="About grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-3" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                 <div className="About-1 grid bg-zinc-800 w-full p-7 rounded-lg">
-                    <p className="text-base/loose text-justify opacity-60">Pada saat duduk di bangku SMA saya bertanya-tangan tentang apa itu web dan aplikasi, mengapa yang dapat digunakan oleh orang banyak dan dari situ saya ingin mengetahui proses di dalamnya.</p>
-                    <p className="text-base/loose text-justify mt-5 opacity-60">Saya mahasiswa ( <span className="text-yellow-300">S1</span> ) jurusan <span className="text-blue-300 italic">Computer Science</span> BINUS University yang lulus di tahun 2027 dan mengambil spesifikasi Software Engineering. Saya tertarik dengan perancangan dan proses pembuatan sebuah proyek web ataupun aplikasi, saya terus mencoba menggali pengetahuan tentang hal terkait agar dapat berkontribusi dalam proyek nyata dan di lingkungan masyarakat.</p>
+                    <p className="text-base/loose text-justify opacity-60">During high school, I constantly wondered what websites and apps were, why they were so widely used, and how they worked. From there, I wanted to understand the processes behind them.</p>
+                    <p className="text-base/loose text-justify mt-5 opacity-60">I'm currently a Bachelor's degree ( <span className="text-yellow-300">S1</span> ) student in <span className="text-blue-300 italic">Computer Science</span>  at BINUS University, graduating in 2027, majoring in Software Engineering. I am interested in designing and developing web and app projects. I continually strive to gain knowledge about these topics so I can contribute to real-world projects and the community.</p>
                     <div className="flex items-center justify-center mt-5">
                         <div className="flex items-center gap-6">
                             <div>
@@ -105,7 +105,7 @@ export const LandingPage = () => {
                                 <div className="grid">
                                     <p className="my-4 text-2xl font-bold">{project.nama}</p>
                                     <p className="mb-4">{project.desk}</p>
-                                    <div className="flex flex-wrap gap-2">
+                                    <div className="flex flex-wrap items-start gap-2">
                                         {
                                             project.tools.map((tool, index) => {
                                                 return <div key={index} className="py-1 px-3 bg-zinc-500 rounded-md font-semibold">
@@ -115,7 +115,7 @@ export const LandingPage = () => {
                                         }
                                     </div>
                                     <div className="mt-5 p-4 bg-violet-700 rounded-md text-center hover:bg-violet-500">
-                                        <a href={project.link}>Lihat Website</a>
+                                        {project.link.trim() ? (<a href={project.link}>Lihat Website</a>) : (<a href={'/error'}>Lihat Website</a>)}
                                     </div>
                                 </div>
                             </div>
